@@ -1,8 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState} from 'react'
 import { Cross as Hamburger } from 'hamburger-react'
-import { FaBars, FaTwitter } from 'react-icons/fa'
-import { links, social } from './data'
-import logo from './logo.svg'
 
 const Navbar = ({ setBlurBg, blurBg }) => {
 
@@ -12,9 +9,9 @@ const Navbar = ({ setBlurBg, blurBg }) => {
   return (
     <>
 
-      <nav>
+      <nav className='desk-nav'>
         <div className="logo"><span>Prime</span></div>
-        <ul>
+        <ul className='desk-nav-ul'>
           <li>Home</li>
           <li>Products</li>
           <li>Features</li>
